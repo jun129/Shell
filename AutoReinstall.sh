@@ -157,12 +157,6 @@ function Start() {
   CVMIRROR=''
   DMIRROR=''
   UMIRROR=''
-  if [[ "$isCN" == '1' ]];then
-    CMIRROR="--mirror http://mirrors.aliyun.com/centos/"
-    CVMIRROR="--mirror http://mirrors.tuna.tsinghua.edu.cn/centos-vault/"
-    DMIRROR="--mirror http://mirrors.aliyun.com/debian/"
-    UMIRROR="--mirror http://mirrors.aliyun.com/ubuntu/"
-  fi
 
   sed -i 's#https://github.com/MoeClub/MoeClub.github.io/raw/master/lib/wget_udeb_amd64.tar.gz#https://cdn.jsdelivr.net/gh/hiCasper/Shell/wget_udeb_amd64.tar.gz#' /tmp/InstallNET.sh
   sed -i 's/$1$4BJZaD0A$y1QykUnJ6mXprENfwpseH0/$1$7R4IuxQb$J8gcq7u9K0fNSsDNFEfr90/' /tmp/InstallNET.sh
